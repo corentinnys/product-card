@@ -1,0 +1,79 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+.card{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 100%);
+}
+.card-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+}
+.card img{
+    display: block;
+    width: 50%;
+
+}
+h1{
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    color:hsl(212, 21%, 14%) ;
+}
+h2{
+    margin: 0px;
+    color:hsl(228, 12%, 48%) ;
+    font-family: 'Fraunces', serif;
+}
+p{
+    text-align: justify;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color:hsl(228, 12%, 48%) ;
+}
+.price {
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.price span:first-child{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Fraunces', serif;
+color:hsl(158, 36%, 37%);
+
+}
+.price span:last-child{
+    text-decoration: line-through;
+    font-size: 0.8rem;
+    margin-left: 20px;
+}
+.btn{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    transition: 1s all;
+}
+.btn-primary{
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+}
+.btn:hover{
+    background-color: hsl(158, 42%, 18%);
+}
+.card-info h1{
+    font-size: 1rem;
+}

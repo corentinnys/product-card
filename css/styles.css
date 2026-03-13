@@ -22,7 +22,7 @@ body {
 .card img {
     display: block;
     width: 100%;
-    height: 240px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -35,7 +35,7 @@ body {
 }
 
 /* Titles */
-h1 {
+.card-title {
     font-size: 0.9rem;
     color: hsl(212, 21%, 14%);
     letter-spacing: 2px;
@@ -43,7 +43,7 @@ h1 {
     margin: 0;
 }
 
-h2 {
+.card-subtitle{
     color: hsl(228, 12%, 48%);
     font-family: 'Fraunces', serif;
     margin: 0;
@@ -52,7 +52,7 @@ h2 {
 }
 
 /* Paragraph */
-p {
+.card-text {
     text-align: left;
     font-size: 14px;
     color: hsl(228, 12%, 48%);
@@ -67,15 +67,14 @@ p {
     align-items: center;
     gap: 20px;
 }
-
-.price span:first-child {
+.price-current {
     font-size: 2rem;
     font-weight: bold;
     font-family: 'Fraunces', serif;
     color: hsl(158, 36%, 37%);
 }
 
-.price span:last-child {
+.price-original {
     text-decoration: line-through;
     font-size: 0.9rem;
     color: hsl(228, 12%, 48%);
@@ -90,7 +89,7 @@ p {
     width: 80%;
     text-align: center;
     text-decoration: none;
-    transition: 0.3s;
+    transition: all 0.3s ease;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -108,7 +107,7 @@ p {
 }
 
 /* Responsive desktop */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
     .card {
         display: flex;
         max-width: 600px;
